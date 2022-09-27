@@ -1,0 +1,73 @@
+body{
+  font-family: verdana sans-serif;
+  margin: 0;
+  background-color: #e1e7ec;
+  color: #008080;
+}
+h2{
+  text-align: center;
+}
+h1{
+  margin-bottom: 0;
+}
+.nav-container{
+  background-color: #008090;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.nav-name{
+  margin-left: 20px;
+}
+.nav-links{
+  text-decoration: none;
+  color: #e6ffff;
+  text-align: center;
+
+}
+ul{
+  list-style-type:none;
+}
+li {
+  display: inline;
+}
+li, a{
+  color: #e6ffff;
+  margin-right: 10px;
+  text-decoration: none;
+}
+#bio{
+  color: white;
+  background: linear-gradient(rgba(190, 245, 245, 0.7), rgba(0, 0, 0, 0.7)),
+   url("../static/images/girl.jpeg") center/cover no-repeat;
+  max-height: 100vh;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.banner{
+  font-family: 'Pacifico', cursive;
+  font-size: 50px;
+  text-align: center;
+}
+.banner-paragragh{
+  font-family: sans-serif;
+  margin-top: 0;
+}
+.mycard{
+    display:grid;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    margin: 2% 20%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.21);
+
+}
+.card_btn{
+    border-style: none;
+    background-color: white;
+
+}

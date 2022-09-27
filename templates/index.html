@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Faith Musyoki Personal Website</title>
+    <link rel="stylesheet" href="../static/styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="nav-container">
+      <div class="nav-name">
+        <h1>Love Struck</h1>
+      </div>
+      <div class="nav-links">
+        <ul>
+          <li><a href="#bio">Home</a></li>
+          <li><a href="#footer-container">Contact</a></li>
+
+        </ul>
+      </div>
+    </div>
+    <div id="bio">
+      <div class="banner">
+        <p>For the Vibes</p>
+      </div>
+    </div>
+    <main>
+      {% for post in all_posts: %}
+      <div class="content">
+          <div class="card mycard">
+              <h2>{{ post.title }}</h2>
+              <p>{{ post.subtitle }}</p>
+              <button class="card_btn">Read</button>
+
+          </div>
+
+      </div>
+      {% endfor %}
+    </main>
+    <footer>
+      <p>Copyright {{ year }} Built by Faith Musyoki</p>
+    </footer>
+
+  </body>
+</html>
